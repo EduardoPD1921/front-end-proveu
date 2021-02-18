@@ -1,0 +1,46 @@
+.input-content {
+    display: flex;
+    height: 30%;
+    width: 30%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 9px;
+}
+
+.time-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h5 {
+    padding: 30px;
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+input {
+    text-align: center;
+}
+
+/* um pouco de responsividade para telas um pouco menores que a de um computador */
+@media only screen and (max-width: 1720px) {
+    .time-inputs {
+        flex-direction: column;
+    }
+
+    .timepicker1 {
+        flex: 1;  
+    }
+
+    .timepicker2 {
+        flex: 1;
+    }
+
+    .input-content {
+        height: 40%;
+    }
+}
